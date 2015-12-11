@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workspace</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  
+  <div id="header">
+    <%= image_tag "murdrr.png", id: "logo", alt: "logo" %>
+    <div id="header-right">
+    <%= link_to "About", '#' %>
+    <%= link_to "Sign up", '#' %>
+    <%= link_to "Log in", '#' %>
+    <%= link_to "Murderers", '#' %>
+    <%= link_to "Victims", '#' %>
+    </div>
+  </div>
+  
+  <div id="container">
+    <%= yield %>
+  </div>
+
+</body>
+</html>
